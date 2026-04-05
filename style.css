@@ -1,4 +1,42 @@
 body{
-    display: flex;
-    
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-top: 50px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.semaforo {
+    width: 100px;
+    background: #222;
+    padding: 70;
+    border-radius: 20px;
+}
+.luz{
+    width: 80px;
+    height: 70px;
+    margin: 10px auto;
+    border-radius: 50%;
+background: #555;
+}
+input{
+    display: none;
+}
+#vermelho:checked ~ .semaforo .vermelho{
+    background: red;
+}
+#amarelo:checked ~ .semaforo .amarelo{
+    background: yellow;
+}
+#verde:checked ~ .semaforo .verde{
+    background: green;
+}
+.botoes label {
+    margin: 7px;
+    padding: 5px;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.botoes label:hover {
+    background: #bbb;
 }
